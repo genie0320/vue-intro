@@ -6,5 +6,5 @@ import { normalizeClass } from 'vue';
 
 <template>
   <Navbar />
-  <Hero title = 'This is title' subTitle="Test is sub"/>
+  <Hero />
 </template>
