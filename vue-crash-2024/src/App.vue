@@ -1,24 +1,53 @@
+<!-- ■■■ A long version ■■■ -->
+<!-- 
 <script>
-// for option API
+import { ref } from 'vue'
+
+// composition API
 export default {
-  data() {
-    return {
-      name: 'Genie',
-      status: 'active',
-      tasks: ['task one', 'task two', 'task three'],
-      link : 'https://www.google.com'
-    }
-  },
-  methods: {
-    toggleStatus() {
-      if (this.status === 'active') {
-        this.status = 'pending';
-      } else if (this.status === 'pending') {
-        this.status = 'inactive';
+
+  setup() {
+    const name = ref('Genie Park');
+    const status = ref('active');
+    const tasks = ref(['task 01', 'task 02', 'task 03']);
+
+    const toggleStatus = () => {
+      if (status.value === 'active') {
+        status.value = 'pending';
+      } else if (status.value === 'pending') {
+        status.value = 'inactive';
       } else {
-        this.status = 'active';
+        status.value = 'active';
       }
     }
+
+    return {
+      name,
+      status,
+      tasks,
+      toggleStatus
+    }
+  }  
+}
+</script> 
+-->
+
+<!-- ■■■ A shorter version ■■■-->
+<script setup>
+import { ref } from 'vue'
+
+// for composition API
+const name = ref('Genie Park');
+const status = ref('active');
+const tasks = ref(['task 01', 'task 02', 'task 03']);
+
+const toggleStatus = () => {
+  if (status.value === 'active') {
+    status.value = 'pending';
+  } else if (status.value === 'pending') {
+    status.value = 'inactive';
+  } else {
+    status.value = 'active';
   }
 }
 </script>
@@ -35,7 +64,7 @@ export default {
   </ul>
 
   <!-- <a v-bind:href="link">Click for Google</a> -->
-  <a :href="link">Click for Google</a> 
+  <!-- <a :href="link">Click for Google</a>  -->
 
   <hr>
   <!-- <button v-on:click="toggleStatus">Change Status</button> -->
