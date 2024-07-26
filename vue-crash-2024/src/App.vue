@@ -2,6 +2,7 @@
 import Navbar from '@/components/Navbar.vue';
 import Hero from '@/components/Hero.vue';
 import HomeCards from '@/components/HomeCards.vue';
+import JobListings from '@/components/JobListings.vue';
 import { normalizeClass } from 'vue';
 </script>
 
@@ -9,4 +10,5 @@ import { normalizeClass } from 'vue';
   <Navbar />
   <Hero />
   <HomeCards />
+  <JobListings />
 </template>
