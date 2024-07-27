@@ -101,6 +101,13 @@ import 'primeicons/primeicons.css'
 
 ```
 
+#### UI
+##### vue-spinner
+```js
+> npm i vue-spinner
+```
+
+
 ### Run dev
 ```js
 npm run dev
