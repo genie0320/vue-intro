@@ -21,3 +21,6 @@ Lifecycle Methods
 
 # Learned
 - React 나 vue의 경우 당연한 이야기지만, href = 'index.html' 보다 RouterLink를 통해서 이동하는 것이 (페이지 전체를 리로딩하는 것이 아니라 필요한 부분을 바꿔끼우는 방식으로 작동하므로) 훨씬 빠르다.
+
+- ref() v. reactive
+ref()를 사용하면, 원시자료와 객체 모두를 담을 수 있고 .value를 사용할 수 있지만, reactive는 오직 객체만을 담을 수 있으며 .value 등을 사용하여 재할당할 수 없다. 
