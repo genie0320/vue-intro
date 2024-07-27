@@ -4,11 +4,11 @@ import { defineProps } from 'vue';
 defineProps({
   title: {
     type: String,
-    default: 'Became a Vue master',
+    default: 'Become a Vue master',
   },
   subTitle: {
     type: String,
-    default: 'This is sub title',
+    default: 'Find the skill that earns money!',
   }
 })
 </script>
