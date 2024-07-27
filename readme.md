@@ -76,9 +76,30 @@ npm install primeicons
 import 'primeicons/primeicons.css'
 ```
 
+#### ■ json server (for fake backend)
+```js
+// install json server
+> npm i json-server
+
+// set env
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "server": "json-server --watch src/jobs.json --port 5000"
+},
+
+// run server
+> npm run server
+```
+
+#### axios (alternate fetch)
+```js
+// install axios
+> npm i axios
 
 
-
+```
 
 ### Run dev
 ```js
